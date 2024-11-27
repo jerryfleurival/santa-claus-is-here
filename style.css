@@ -1,0 +1,123 @@
+html { height:100%; }
+body 
+{
+  height:100%;
+  margin:0px;
+  background-image: url("images/night-sky-bg.png");
+  /* image source: https://pixabay.com/vectors/santa-claus-christmas-reindeer-31665/ */
+  background-repeat: no-repeat;
+  background-position:center; 
+  background-attachment:fixed;
+  background-size:cover;
+  overflow:hidden; 
+  
+}
+#layout { width:100%; height:100%; }
+img#wand { display:none; position:absolute; top:20%; right:0px; z-index:-1; transform:translateX(-30px); }
+img#santa { position:absolute; top:20%; right:0px; width:500px; }
+img#star { display:none; position:absolute; bottom:55%; right:87.6%; width:48px; height:45px; }
+img#decorate_tree { display:none; position:absolute; top:36%; left:20px; }
+img#homes{ position:absolute; bottom:0px; width:auto; height:400px; transform:translateX(-50%); left:50%; }
+
+/* -----------------------------------------------------  */
+
+.doors 
+{
+  visibility:hidden; background-color:black; position:absolute; bottom:0px; z-index:1;
+}
+div#box 
+{ 
+  position:absolute; transform:translateX(-50%); left:50%;
+  background-color:transparent; width:1018px; height:100px; bottom:106px; 
+}
+div#door1 
+{ 
+  width:2.2%; height:33px; left:15.7%; 
+}
+div#door2 
+{ 
+  width:2.2%; height:36px; left:37%; 
+}
+div#door3 
+{ 
+  width:2.3%; height:35px; left:69.2%; 
+}
+div#door4 
+{ 
+  width:2.7%; height:39px; left:87.7%; 
+}
+/* figure layout */
+.kid { width:18px; height:auto; position:absolute; bottom:0px; left:50%;}
+img#kid2a { display:none; }
+img#kid2b { display:none; }
+img#kid2c { display:none; }
+img#kid3a { display:none; }
+img#kid3b { display:none; }
+img.speech { width:140px; height:140px; }
+img#s1 { transform:translate(3px, -95px); }
+img#s2 { transform:translate(5px, -80px); }
+img#s3 { transform:translate(5px, -84px); } 
+img#s4 { transform:translate(-130px, -220px); }
+img#s5 { transform:translate(-100px, -80px); }
+img.gifts { width:80px; height:auto; display:none; }
+img#gift1 { position:absolute; bottom:10px; transform:translateX(30px); }
+img#gift2 { position:absolute; bottom:10px; transform:translateX(90px); }
+img#gift3 { position:absolute; bottom:10px; transform:translateX(150px); }
+img#gift4 { position:absolute; bottom:10px; transform:translateX(210px); }
+img#gift5 { position:absolute; bottom:10px; transform:translateX(260px); }
+img#gift6 { position:absolute; bottom:10px; transform:translateX(310px); }
+img#gift7 { position:absolute; bottom:10px; transform:translateX(340px); }
+
+/* Responsive Mode */
+@media only screen and (max-width:1399px) 
+{
+  img#wand { width:30px; transform:translateX(-21px); }
+  img#santa { width:300px; }	
+  img#homes { height:190px !important; }
+  img#star { bottom:55% !important; right:87% !important; width:34px; height:31px; }
+  img#decorate_tree { width:20%; }
+  img.gifts { width:45px !important; }
+  img#gift1 { transform:translateX(30px); }
+  img#gift2 { transform:translateX(60px); }
+  img#gift3 { transform:translateX(90px); }
+  img#gift4 { transform:translateX(120px); }
+  img#gift5 { transform:translateX(150px); }
+  img#gift6 { transform:translateX(180px); }
+  img#gift7 {transform:translateX(210px); }
+  #box { width:482px !important; bottom:50px !important; }
+  img#s4 { transform:translate(-108px, -220px); } 
+  img.speech { width:100px; height:100px; }
+  div#door1 { height:20%; width:2.6%; left:15.4%; }
+  div#door2 { height:19%; }
+  div#door3 { height:18%; }
+  div#door4 { height:20%; }
+  .kid { bottom:80%; }
+}
+@media only screen and (max-width:1399px) and (min-width:1081px)
+{
+	img#decorate_tree { top:38%; }
+}
+@media only screen and (max-width:1180px)
+{
+  img#santa { width:250px; }
+}
+@media only screen and (max-width:1685px) and (min-width:1400px)
+{
+  img#wand { width:35px; }
+  img#santa { width:335px; }
+  img#homes { height:290px; }
+  img#decorate_tree { left:5px; width:325px; }
+  img.gifts { width:72px; }
+  img#gift1 { transform:translateX(12px); }
+  img#gift2 { transform:translateX(30px); }
+  img#gift3 { transform:translateX(60px); }
+  img#gift4 { transform:translateX(110px); }
+  img#gift5 { transform:translateX(160px); }
+  img#gift6 { transform:translateX(200px); }
+  img#gift7 {transform:translateX(240px); }
+  div#box { width:58.8%; bottom:75px; }
+  div#door1 { left:19.2%; }
+  div#door2 { left:38.1%; }
+  div#door3 { left:67.2%; }
+  div#door4 { left:83.7%; }
+}
